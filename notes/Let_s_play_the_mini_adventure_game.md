@@ -17,8 +17,8 @@ At first, let's play the Dwemthy's Array (mini adventure game).
 	+ line 9-14 and 17-22: Define two monsters.
 	+ line 25: Create a fake dwemthy's array. Because the array has only two monsters. ;-)
 	+ line 28: Create a first rabbit.
-	+ line 31: Fight the ScubaArgentine (first monster). The symbols, `%(lettuce), *(bomb), /(sword) and ^(boomerang)` are methods defined in `rabbit.rb`.
-	+ line 32-35: The messages showen by the program.
+	+ line 31: Fight the ScubaArgentine (first monster). The symbols, `%(lettuce), *(bomb), /(sword) and ^(boomerang)` are methods defined in the file `rabbit.rb`.
+	+ line 32-35: The messages shown by the program.
 	+ line 40-41: First monster has died and next monster has emerged.
 	+ line 50: First rabbit has died.
 	+ line 57: Create the second rabbit to continue the game.
