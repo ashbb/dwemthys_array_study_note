@@ -1,0 +1,80 @@
+C:\dwemthys_array>irb --prompt simple
+>>
+?> require 'dwemthy'
+=> true
+>>
+?> require 'rabbit'
+=> true
+>>
+?> class ScubaArgentine < Creature
+>>   life 46
+>>   strength 35
+>>   charisma 91
+>>   weapon 2
+>> end
+=> 2
+>>
+?> class IndustrialRaverMonkey < Creature
+>>   life 46
+>>   strength 35
+>>   charisma 91
+>>   weapon 2
+>> end
+=> 2
+>>
+?> fdw = fake_dwemthys_array = DwemthysArray[ScubaArgentine.new, IndustrialRaverMonkey.new]
+=> #
+>>
+?> r = Rabbit.new
+=> #<Rabbit:0x2dc8334 @bombs=3, @weapon=4, @life=10, @charisma=44, @strength=2>
+>>
+?> r % fdw
+[Healthy lettuce gives you 26 life points!!]
+[You hit with 1 points of damage!]
+#
+[Your enemy hit with 4 points of damage!]
+=> nil
+>>
+?> r * fdw
+[You hit with 58 points of damage!]
+[ScubaArgentine has died.]
+[Get ready. IndustrialRaverMonkey has emerged.]
+#
+[Your enemy hit with 18 points of damage!]
+=> nil
+>>
+?> r / fdw
+[You hit with 8 points of damage!]
+#
+[Your enemy hit with 20 points of damage!]
+[Rabbit has died.]
+=> nil
+>>
+?> r ^ fdw
+[Rabbit is too dead to fight!]
+=> nil
+>>
+?> r = Rabbit.new
+=> #<Rabbit:0x2dc28d0 @bombs=3, @weapon=4, @life=10, @charisma=44, @strength=2>
+>>
+?> r ^ fdw
+[You hit with 10 points of damage!]
+#
+[Your enemy hit with 22 points of damage!]
+[Rabbit has died.]
+=> nil
+>>
+?> r = Rabbit.new
+=> #<Rabbit:0x2dbf950 @bombs=3, @weapon=4, @life=10, @charisma=44, @strength=2>
+>>
+?> r * fdw
+[You hit with 54 points of damage!]
+[IndustrialRaverMonkey has died.]
+[Whoa.  You decimated Dwemthy's Array!]
+#
+NoMethodError: undefined method `>' for nil:NilClass
+        from ./dwemthy.rb:64:in `fight'
+        from ./rabbit.rb:33:in `*'
+        from (irb):36
+        from :0
+>>
