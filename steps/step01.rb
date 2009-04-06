@@ -5,6 +5,7 @@ class Creature
     @traits[:life] = val
     p @traits # debug
   end
+  
   def self.strength val
     @traits ||= {}
     @traits[:strength] = val
