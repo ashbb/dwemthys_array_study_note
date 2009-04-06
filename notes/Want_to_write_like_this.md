@@ -24,6 +24,7 @@ Okay, I can define the class method. It's not so difficult.
 	    @traits[:life] = val
 	    p @traits # debug
 	  end
+	  
 	  def self.strength val
 	    @traits ||= {}
 	    @traits[:strength] = val
@@ -173,7 +174,6 @@ Look at the below code. So, cool!!
 	
 	class Rabbit < Creature
 	  traits :bombs
-	
 	  life 10
 	  strength 2
 	  charisma 44
