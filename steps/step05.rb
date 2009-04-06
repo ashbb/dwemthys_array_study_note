@@ -17,7 +17,6 @@ end
 
 class Rabbit < Creature
   traits :bombs
-
   life 10
   strength 2
   charisma 44
