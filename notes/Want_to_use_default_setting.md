@@ -7,6 +7,8 @@ Rabbit class object `r` has 5 instance variables with default values. But, when 
 
 Okay, let me try to think about that. At first, check the instance variables with the method `instance_variables` like this:
 
+# [step11.rb](http://github.com/ashbb/dwemthys_array_study_note/blob/master/steps/step11.rb)
+
 	# step11.rb
 	class Creature
 	  def self.life val
@@ -37,6 +39,8 @@ Output is:
 Oops, Rabbit object `r` has no instance variables.
 
 Well, let me try to improve the code.
+
+# [step12.rb](http://github.com/ashbb/dwemthys_array_study_note/blob/master/steps/step12.rb)
 
 	# step12.rb
 	class Creature
@@ -73,7 +77,17 @@ Output is:
 
 I got it!
 
-**NOTE: now under construction... need some explanation here.**
+The above Creature class is added the followings:
+
+1. define class method `traits` which returns the value of class-instance variable `@traits`.
+
+2. define `initialize` method which creats an instance variable `@life` with the class method `traits`.
+
+3. define attribute reader `:life`.
+
+Now, I understood what I have to do. Let me try to improve the Creature class of `step05.rb`.
+
+# [step13.rb](http://github.com/ashbb/dwemthys_array_study_note/blob/master/steps/step13.rb)
 
 	# step13.rb
 	class Creature
@@ -121,4 +135,19 @@ Output is:
 	3
 	>Exit code: 0
 
-**NOTE: now under construction... need some explanation here.**
+Done! This works pretty well.
+
+1. class method `traits` is already defined. so, just add the function which returns the value of `@traits` when using with no block. look at line 4.
+
+2. define `initialize` method which creats instance variables dynamically with the method `instance_variable_set`. look at line 19-23.
+
+3. define attribute readers. look at line 5.
+
+
+Note
+----
+Looked at [original code](http://github.com/ashbb/dwemthys_array_study_note/tree/master/whys_code/dwemthy.rb).
+
+\_why adds `class_eval` method. But in this case, it's enough without the method.
+
+I guess he used it to introduce Metaprogramming. ;-)

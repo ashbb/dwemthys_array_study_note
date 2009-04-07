@@ -17,6 +17,8 @@ The above code sets Dragon's traits, four default values with class methods.
 
 Okay, I can define the class method. It's not so difficult.
 
+# [step01.rb](http://github.com/ashbb/dwemthys_array_study_note/blob/master/steps/step01.rb)
+
 	# step01.rb
 	class Creature
 	  def self.life val
@@ -52,6 +54,8 @@ I found the method `define_method`. It can define methods dynamically.
 
 Okay, let me try.
 
+# [step02.rb](http://github.com/ashbb/dwemthys_array_study_note/blob/master/steps/step02.rb)
+
 	# step02.rb
 	class Creature
 	  trait = :life
@@ -77,6 +81,8 @@ Output is:
 Oops, I can create instance method but not create class method.
 
 I have to create **metaclass** and use the method `instance_eval`.
+
+# [step03.rb](http://github.com/ashbb/dwemthys_array_study_note/blob/master/steps/step03.rb)
 
 	# step03.rb
 	class Creature
@@ -104,6 +110,8 @@ Output is:
 I got it!
 
 The below is a bit imporved code to create multi methods.
+
+# [step04.rb](http://github.com/ashbb/dwemthys_array_study_note/blob/master/steps/step04.rb)
 
 	# step04.rb
 	class Creature
@@ -143,7 +151,6 @@ class Rabbit
 
 	class Rabbit < Creature
 	  traits :bombs
-	
 	  life 10
 	  strength 2
 	  charisma 44
@@ -154,6 +161,8 @@ class Rabbit
 Wow, new class method `bombs` is available in the Rabbit class! Despite it's not appeared in the Creature class!
 
 Look at the below code. So, cool!!
+
+# [step05.rb](http://github.com/ashbb/dwemthys_array_study_note/blob/master/steps/step05.rb)
 
 	# step05.rb
 	class Creature
