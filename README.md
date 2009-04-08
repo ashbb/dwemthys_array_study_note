@@ -19,7 +19,7 @@ Table of contents
 
 Opening
 --------
-![dwemthys_array_opening.png(http://github.com/ashbb/dwemthys_array_study_note/raw/master/dwemthys_array_opening.png)
+![dwemthys_array_opening.png](http://github.com/ashbb/dwemthys_array_study_note/raw/master/dwemthys_array_opening.png)
 
 **NOTE**: Created by **\_why**. 
 
