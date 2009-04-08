@@ -7,6 +7,7 @@ Dwemthy's Array Study Note
 
 I read the above two sites and learned my first Ruby Metaprobramming. This is a tiny study note. :)
 
+
 Table of contents
 -----------------
 - [Let's play the mini adventure game](http://github.com/ashbb/dwemthys_array_study_note/tree/master/notes/Let_s_play_the_mini_adventure_game.md)
@@ -15,6 +16,14 @@ Table of contents
 - [Art of symbols](http://github.com/ashbb/dwemthys_array_study_note/tree/master/notes/Art_of_symbols.md) (re-define math operators)
 - [Fight a battle by turns](http://github.com/ashbb/dwemthys_array_study_note/tree/master/notes/Fight_a_battle_by_turns.md) (method_missing)
 
+
+Opening
+--------
+![dwemthys_array_opening.png(http://github.com/ashbb/dwemthys_array_study_note/raw/master/dwemthys_array_opening.png)
+
+**NOTE**: Created by **\_why**. 
+
+
 Have fun!
 ---------
-2009.4.7 by **ashbb**
+2009.4.8 by **ashbb**
