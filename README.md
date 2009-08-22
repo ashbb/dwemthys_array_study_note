@@ -7,6 +7,7 @@ Dwemthy's Array Study Note
 
 I read the above two sites and learned my first Ruby Metaprobramming. This is a tiny study note. :)
 
+**NOTE:** The above two URLs are not linked now. Download [chapter-6.zip](http://github.com/ashbb/dwemthys_array_study_note/tree/master/chapter-6.zip) and [dwemthy.zip](http://github.com/ashbb/dwemthys_array_study_note/tree/master/dwemthy.zip)
 
 Table of contents
 -----------------
